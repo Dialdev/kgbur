@@ -1,0 +1,180 @@
+User-Agent: *
+Disallow: /search*
+Disallow: */index.php
+Disallow: /bitrix/
+Disallow: /*show_include_exec_time=
+Disallow: /*show_page_exec_time=
+Disallow: /*show_sql_stat=
+Disallow: /*bitrix_include_areas=
+Disallow: /*clear_cache=
+Disallow: /*clear_cache_session=
+Disallow: /*ADD_TO_COMPARE_LIST
+Disallow: /*ORDER_BY
+Disallow: /*PAGEN
+Disallow: /*?print=
+Disallow: /*&print=
+Disallow: /*print_course=
+Disallow: /*?action=
+Disallow: /*&action=
+Disallow: /*register=
+Disallow: /*forgot_password=
+Disallow: /*change_password=
+Disallow: /*login=
+Disallow: /*logout=
+Disallow: /*auth=
+Disallow: /*backurl=
+Disallow: /*back_url=
+Disallow: /*BACKURL=
+Disallow: /*BACK_URL=
+Disallow: /*back_url_admin=
+Disallow: /*?utm_source=
+Disallow: /*?bxajaxid=
+Disallow: /*&bxajaxid=
+Disallow: /*?view_result=
+Disallow: /*&view_result=
+Disallow: /info/faq/kakie-sushchestvuyut-osobennosti-ekspluatatsii-neglubokoy-skvazhiny-na-peschanom-gorizonte-/
+Disallow: /info/faq/mozhno-li-pit-vodu-iz-skvazhiny/
+Disallow: /info/faq/kakoy-obem-vody-budet-zatrachen-pri-vypolnenii-burovykh-rabot/
+Disallow: /info/faq/nuzhno-li-rabotnikam-razreshenie-na-provedenie-burovykh-rabot/
+Disallow: /info/faq/mozhno-li-vosstanovit-skvazhinu/
+Disallow: /info/faq/ranee-proburili-skvazhinu-voda-kachestvennaya-chistaya-no-posle-togo-kak-zhidkost-prostoit-v-butylka/
+Disallow: /info/faq/na-kakom-udalenii-skvazhiny-dolzhny-raspolagatsya-drug-ot-druga/
+Disallow: /info/faq/mozhno-li-samostoyatelno-opredelit-glubinu-budushchey-skvazhiny/
+Disallow: /info/faq/kak-obustroit-skvazhinu-na-uchastke-esli-ona-ne-budet-ispolzovatsya-ezhednevno-a-lish-3-4-raza-v-mes/
+Disallow: /info/faq/melkaya-skvazhina-zaililas-chto-delat/
+Disallow: /info/faq/mozhno-li-proburit-skvazhinu-samostoyatelno/
+Disallow: /company/licenses/o-litsenziyakh/
+Disallow: /company/vacancy/brigada-burovikov/
+Clean-param: name /form/
+Clean-param: campaign_id /
+Clean-param: x_e /
+Clean-param: p0e /
+Clean-param: from /
+Clean-param: etext /
+Allow: /bitrix/components/
+Allow: /bitrix/cache/
+Allow: /bitrix/js/
+Allow: /bitrix/templates/
+Allow: /bitrix/panel/
+Sitemap: https://kgbur.ru/sitemap.xml
+Sitemap: http://kgbur.ru/sitemap.xml
+
+User-Agent: Yandex
+Disallow: /search*
+Disallow: */index.php
+Disallow: /bitrix/
+Disallow: /*show_include_exec_time=
+Disallow: /*show_page_exec_time=
+Disallow: /*show_sql_stat=
+Disallow: /*bitrix_include_areas=
+Disallow: /*clear_cache=
+Disallow: /*clear_cache_session=
+Disallow: /*ADD_TO_COMPARE_LIST
+Disallow: /*ORDER_BY
+Disallow: /*PAGEN
+Disallow: /*?print=
+Disallow: /*&print=
+Disallow: /*print_course=
+Disallow: /*?action=
+Disallow: /*&action=
+Disallow: /*register=
+Disallow: /*forgot_password=
+Disallow: /*change_password=
+Disallow: /*login=
+Disallow: /*logout=
+Disallow: /*auth=
+Disallow: /*backurl=
+Disallow: /*back_url=
+Disallow: /*BACKURL=
+Disallow: /*BACK_URL=
+Disallow: /*back_url_admin=
+Disallow: /*?utm_source=
+Disallow: /*?bxajaxid=
+Disallow: /*&bxajaxid=
+Disallow: /*?view_result=
+Disallow: /*&view_result=
+Disallow: /info/faq/kakie-sushchestvuyut-osobennosti-ekspluatatsii-neglubokoy-skvazhiny-na-peschanom-gorizonte-/
+Disallow: /info/faq/mozhno-li-pit-vodu-iz-skvazhiny/
+Disallow: /info/faq/kakoy-obem-vody-budet-zatrachen-pri-vypolnenii-burovykh-rabot/
+Disallow: /info/faq/nuzhno-li-rabotnikam-razreshenie-na-provedenie-burovykh-rabot/
+Disallow: /info/faq/mozhno-li-vosstanovit-skvazhinu/
+Disallow: /info/faq/ranee-proburili-skvazhinu-voda-kachestvennaya-chistaya-no-posle-togo-kak-zhidkost-prostoit-v-butylka/
+Disallow: /info/faq/na-kakom-udalenii-skvazhiny-dolzhny-raspolagatsya-drug-ot-druga/
+Disallow: /info/faq/mozhno-li-samostoyatelno-opredelit-glubinu-budushchey-skvazhiny/
+Disallow: /info/faq/kak-obustroit-skvazhinu-na-uchastke-esli-ona-ne-budet-ispolzovatsya-ezhednevno-a-lish-3-4-raza-v-mes/
+Disallow: /info/faq/melkaya-skvazhina-zaililas-chto-delat/
+Disallow: /company/licenses/o-litsenziyakh/
+Disallow: /company/vacancy/brigada-burovikov/
+Clean-param: name /form/
+Clean-param: campaign_id /
+Clean-param: x_e /
+Clean-param: p0e /
+Clean-param: from /
+Clean-param: etext /
+Allow: /bitrix/components/
+Allow: /bitrix/cache/
+Allow: /bitrix/js/
+Allow: /bitrix/templates/
+Allow: /bitrix/panel/
+Sitemap: https://kgbur.ru/sitemap.xml
+
+User-Agent: Googlebot
+Disallow: /search*
+Disallow: */index.php
+Disallow: /bitrix/
+Disallow: /*show_include_exec_time=
+Disallow: /*show_page_exec_time=
+Disallow: /*show_sql_stat=
+Disallow: /*bitrix_include_areas=
+Disallow: /*clear_cache=
+Disallow: /*clear_cache_session=
+Disallow: /*ADD_TO_COMPARE_LIST
+Disallow: /*ORDER_BY
+Disallow: /*PAGEN
+Disallow: /*?print=
+Disallow: /*&print=
+Disallow: /*print_course=
+Disallow: /*?action=
+Disallow: /*&action=
+Disallow: /*register=
+Disallow: /*forgot_password=
+Disallow: /*change_password=
+Disallow: /*login=
+Disallow: /*logout=
+Disallow: /*auth=
+Disallow: /*backurl=
+Disallow: /*back_url=
+Disallow: /*BACKURL=
+Disallow: /*BACK_URL=
+Disallow: /*back_url_admin=
+Disallow: /*?utm_source=
+Disallow: /*?bxajaxid=
+Disallow: /*&bxajaxid=
+Disallow: /*?view_result=
+Disallow: /*&view_result=
+Disallow: /info/faq
+Disallow: /info/faq/kakie-sushchestvuyut-osobennosti-ekspluatatsii-neglubokoy-skvazhiny-na-peschanom-gorizonte-/
+Disallow: /info/faq/mozhno-li-pit-vodu-iz-skvazhiny/
+Disallow: /info/faq/kakoy-obem-vody-budet-zatrachen-pri-vypolnenii-burovykh-rabot/
+Disallow: /info/faq/nuzhno-li-rabotnikam-razreshenie-na-provedenie-burovykh-rabot/
+Disallow: /info/faq/mozhno-li-vosstanovit-skvazhinu/
+Disallow: /info/faq/ranee-proburili-skvazhinu-voda-kachestvennaya-chistaya-no-posle-togo-kak-zhidkost-prostoit-v-butylka/
+Disallow: /info/faq/na-kakom-udalenii-skvazhiny-dolzhny-raspolagatsya-drug-ot-druga/
+Disallow: /info/faq/mozhno-li-samostoyatelno-opredelit-glubinu-budushchey-skvazhiny/
+Disallow: /info/faq/kak-obustroit-skvazhinu-na-uchastke-esli-ona-ne-budet-ispolzovatsya-ezhednevno-a-lish-3-4-raza-v-mes/
+Disallow: /info/faq/melkaya-skvazhina-zaililas-chto-delat/
+Disallow: /company/licenses/o-litsenziyakh/
+Disallow: /company/vacancy/brigada-burovikov/
+Clean-param: name /form/
+Clean-param: campaign_id /
+Clean-param: x_e /
+Clean-param: p0e /
+Clean-param: from /
+Clean-param: etext /
+Allow: /info/faq$
+Allow: /bitrix/components/
+Allow: /bitrix/cache/
+Allow: /bitrix/js/
+Allow: /bitrix/templates/
+Allow: /bitrix/panel/
+Sitemap: https://kgbur.ru/sitemap.xml

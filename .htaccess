@@ -1,0 +1,101 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+
+<IfModule mod_php5.c>
+  php_flag session.use_trans_sid off
+  #php_flag default_charset UTF-8
+  #php_value display_errors 1
+</IfModule>
+
+<IfModule mod_php7.c>
+  php_flag session.use_trans_sid off
+  #php_flag default_charset UTF-8
+  #php_value display_errors 1
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+  RewriteBase /
+
+RewriteCond %{THE_REQUEST} ^[^\s]+\s+[^?]*?\?
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule .? %{REQUEST_URI}? [R=301,L]
+
+
+	RewriteRule ^index\.html$ / [R=301,L]
+	RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
+
+  # редирект с www на без-www
+  RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+  
+  # редирект с http на https
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  
+  #уьираем /index.php в конце алиаса
+  #RewriteRule ^(.*)index\.php$ $1 [R=301,L]
+
+  #добавляем / в конце алиасов
+  RewriteCond %{REQUEST_URI} ^(.*)/$
+  RewriteRule .* - [L]
+
+  RewriteCond %{ENV:REDIRECT_STATUS} 200
+  RewriteRule .* - [L]
+  
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteCond %{REQUEST_FILENAME} !-l
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteCond %{REQUEST_URI} ^(.*/[^/\.]+)$
+   RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1/ [R=301,L]
+
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteCond %{REQUEST_FILENAME} !-l
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+   RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+   RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_setenvif.c>
+	SetEnv TZ Europe/Moscow
+</IfModule>
+
+<IfModule mod_deflate.c>
+  <IfModule mod_filter.c>
+      AddOutputFilterByType DEFLATE text/plain text/html
+      AddOutputFilterByType DEFLATE text/css
+      AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
+      AddOutputFilterByType DEFLATE text/xml application/xml application/xhtml+xml application/rss+xml
+      AddOutputFilterByType DEFLATE application/json
+      AddOutputFilterByType DEFLATE application/vnd.ms-fontobject application/x-font-ttf font/opentype image/svg+xml image/x-icon
+  </IfModule>
+</IfModule>
+
+
+Redirect 301 /stroitelstvo-i-proektirovanie-vzu.html https://kgbur.ru/services/inzhenernye-sistemy-i-kommunikatsii/stroitelstvo-i-proektirovanie-vzu/
+Redirect 301 /avtonomnaya-kanalizacziya.html https://kgbur.ru/services/inzhenernye-sistemy-i-kommunikatsii/avtonomnaya-kanalizatsiya/
+Redirect 301 /sistemy-otopleniya.html https://kgbur.ru/services/inzhenernye-sistemy-i-kommunikatsii/montazh-sistem-otopleniya-v-kaluge/
+Redirect 301 /filtry-dlya-vody.html https://kgbur.ru/services/inzhenernye-sistemy-i-kommunikatsii/sistema-ochistki-vody-v-kaluge/
+Redirect 301 /vodosnabzhenie-promyishlennoe.html https://kgbur.ru/services/inzhenernye-sistemy-i-kommunikatsii/vodosnabzhenie-promyshlennykh-obektov/
+Redirect 301 /vodosnabzhenie.html https://kgbur.ru/services/inzhenernye-sistemy-i-kommunikatsii/vodosnabzhenie-chastnogo-doma/
+Redirect 301 /burenie-kolodcza-v-kaluge.html https://kgbur.ru/services/burovye-raboty/kolodtsy/
+Redirect 301 /obustrojstvo-skvazhin.html https://kgbur.ru/services/burovye-raboty/obustroystvo-skvazhin-v-kaluge/
+Redirect 301 /inzhenerno-geologicheskie-izyiskaniya.html https://kgbur.ru/services/burovye-raboty/inzhenerno-geologicheskie-izyskaniya/
+Redirect 301 /geotermalnoe-etoplenie.html https://kgbur.ru/services/burovye-raboty/geotermalnoe-otoplenie/
+Redirect 301 /burenie-pod-vodoponizhenie.html https://kgbur.ru/services/burovye-raboty/burenie-pod-vodoponizhenie/
+Redirect 301 /burenie-pod-katodnuyu-zashhitu.html https://kgbur.ru/services/burovye-raboty/burenie-pod-katodnuyu-zashchitu/
+Redirect 301 /burenie-pod-svai.html https://kgbur.ru/services/burovye-raboty/burenie-pod-svai/
+Redirect 301 /burenie-v-trudnodostupnyix-mestax-v-kaluge.html https://kgbur.ru/services/burovye-raboty/burenie-v-trudnodostupnykh-mestakh/
+Redirect 301 /burenie-promishlennih-skvazhin.html https://kgbur.ru/services/burovye-raboty/burenie-promyshlennykh-skvazhin/
+Redirect 301 /burenie.html https://kgbur.ru/services/burovye-raboty/burenie-skvazhin-na-vodu/
+Redirect 301 /kontaktyi.html https://kgbur.ru/contacts/
+Redirect 301 /vakansii.html https://kgbur.ru/company/vacancy/
+Redirect 301 /o-liczenziyax.html https://kgbur.ru/company/licenses/
+Redirect 301 /vodoochistka-filtryi.html http://kgbur.ru/services/inzhenernye-sistemy-i-kommunikatsii/sistema-ochistki-vody-v-kaluge/
